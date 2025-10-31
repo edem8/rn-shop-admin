@@ -1,3 +1,4 @@
+import { ADMIN } from "@/constants/constants";
 import { createClient } from "@/supabase/server";
 import { redirect } from "next/navigation";
 import React, { ReactNode } from "react";
@@ -21,7 +22,7 @@ export default async function AuthLayout({
       return;
     }
 
-    if (data.type == "admin") {
+    if (data.type == ADMIN) {
       return redirect("/admin");
     }
   }
