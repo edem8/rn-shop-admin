@@ -190,7 +190,7 @@ const CategoriesPageComponent: FC<Props> = ({ categories }) => {
                   category={category}
                   setCurrentCategory={setCurrentCategory}
                   setIsCreateCategoryModalOpen={setIsCreateCategoryModalOpen}
-                  // deleteCategoryHandler={deleteCategoryHandler}
+                  deleteCategoryHandler={deleteCategoryHandler}
                 />
               ))}
             </TableBody>
