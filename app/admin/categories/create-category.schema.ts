@@ -15,6 +15,7 @@ export const createCategorySchema = z.object({
 
 export type CreateCategorySchema = z.infer<typeof createCategorySchema>;
 
+
 export const createCategorySchemaServer = z.object({
   imageUrl: z.string().min(1, { message: 'Image is required' }),
   name: z
@@ -25,6 +26,8 @@ export const createCategorySchemaServer = z.object({
 export type CreateCategorySchemaServer = z.infer<
   typeof createCategorySchemaServer
 >;
+
+
 
 export const updateCategorySchema = z.object({
   imageUrl: z.string().min(1, { message: 'Image is required' }),

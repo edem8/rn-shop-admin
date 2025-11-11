@@ -1,20 +1,23 @@
-export type product = {
+import { ProductWithCategory } from "../products/products.types";
+
+
+
+
+export type Category = {
+  created_at: string;
   id: number;
-  title: string;
+  imageUrl: string;
+  name: string;
   slug: string;
-  imagesUrl: string[];
-  price: number;
-  heroImage: string;
-  category: number;
-  maxQuantity: number;
 };
+
 
 export type CategoryWithProducts = {
   created_at: string;
   id: number;
   imageUrl: string;
   name: string;
-  products: product[];
+  products: ProductWithCategory[];
   slug: string;
 };
 

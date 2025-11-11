@@ -90,8 +90,8 @@ export const CategoryTableRow = ({
                 <ScrollArea className="h-[400px] rounded-md p-4">
                   {category.products.map((product) => (
                     <Link key={product.id} href={`/products/${product.id}`}>
-                      <Card className="cursor-pointer">
-                        <div className="grid grid-cols-[100px,1fr] items-center gap-4">
+                      <Card className="cursor-pointer py-0">
+                        <div className="flex items-center gap-4">
                           <Image
                             alt="Product image"
                             className="aspect-square rounded-md object-cover"
